@@ -62,7 +62,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('📸 ғᴏʟʟᴏᴡ ᴜs ᴏɴ ɪɴsᴛᴀ', url='https://youtube.com/@Tech_VJ')
             ],[
-            InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ ɢʀᴏᴜᴘ', url='https://t.me/+GU7ByXRHzGJkNzJl'),
+            InlineKeyboardButton('🎬 ʀᴇǫᴜᴇsᴛ ᴍᴏᴠɪᴇ', url='https://t.me/+GU7ByXRHzGJkNzJl'),
             InlineKeyboardButton('🔔 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/TheMovieGuy_01')
             ],[
             InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ', url='https://t.me/ContactTheMovieGuy_bot')
@@ -340,7 +340,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('📸 ғᴏʟʟᴏᴡ ᴜs ᴏɴ ɪɴsᴛᴀ', url='https://youtube.com/@Tech_VJ')
             ],[
-            InlineKeyboardButton('🎬 ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ ɢʀᴏᴜᴘ', url='https://t.me/+GU7ByXRHzGJkNzJl'),
+            InlineKeyboardButton('🎬 ʀᴇǫᴜᴇsᴛ ᴍᴏᴠɪᴇ', url='https://t.me/+GU7ByXRHzGJkNzJl'),
             InlineKeyboardButton('🔔 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/TheMovieGuy_01')
             ],[
             InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ', url='https://t.me/ContactTheMovieGuy_bot')
