@@ -21,7 +21,7 @@ class script(object):
 
 ⚠️ Forward the File to Your Saved Messages! 
 
-🚫 File or Bot might get Deleted in 5 minutes.️"""
+🚫 File or Bot might get Deleted in 5 minutes.️</b>"""
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
