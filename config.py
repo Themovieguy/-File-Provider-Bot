@@ -47,7 +47,7 @@ DB_NAME = environ.get("DB_NAME", "vjbotz")
 # Bot Information
 BOT_TOKEN = environ.get("BOT_TOKEN", "6560235734:AAEFva5VtBmlnEpaQqfFW3uKcsDsFRcU_cA")
 BOT_USERNAME = environ.get("BOT_USERNAME", "TheMovieGuyFileProvider_bot") # your bot username without @
-PICS = (environ.get('PICS', 'AVvXsEhfD7oa_JNyvm16jgskbmqNXXvHdyQQU5W2YQxXckxxpw_Moh4hpMrWaERAxRaBe0C_JyMWOogUxOLjCyQCeg1d52vw9aP0bkTH0l192 AVvXsEhfD7oa_JNyvm16jgskbmqNXXvHdyQQU5W2YQxXckxxpw_Moh4hpMrWaERAxRaBe0C_JyMWOogUxOLjCyQCeg1d52vw9aP0bkTH0l192')).split() # Bot Start Picture
+PICS = (environ.get('PICS', 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfD7oa_JNyvm16jgskbmqNXXvHdyQQU5W2YQxXckxxpw_Moh4hpMrWaERAxRaBe0C_JyMWOogUxOLjCyQCeg1d52vw9aP0bkTH0l192-vbBZ-TetNA03v6MgKiPDHASbx4KSmbpPParAdhX6AN7waV4v9VJUnfdiCPAmo8hyGL-1XSorJRc8F5upnPZMQm/s1600/20240220_142447.png https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfD7oa_JNyvm16jgskbmqNXXvHdyQQU5W2YQxXckxxpw_Moh4hpMrWaERAxRaBe0C_JyMWOogUxOLjCyQCeg1d52vw9aP0bkTH0l192-vbBZ-TetNA03v6MgKiPDHASbx4KSmbpPParAdhX6AN7waV4v9VJUnfdiCPAmo8hyGL-1XSorJRc8F5upnPZMQm/s1600/20240220_142447.png')).split() # Bot Start Picture
 
 # Auto Delete Information
 AUTO_DELETE = int(environ.get("AUTO_DELETE", "5")) # Time in Minutes
