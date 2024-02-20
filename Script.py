@@ -11,9 +11,17 @@ class script(object):
 # Ask Doubt on telegram @KingVJ01
 
     
-    CAPTION = """<b>🎬 ғɪʟᴇɴᴀᴍᴇ : {file_name}
+    CAPTION = """<b>🎬 File Name: {file_name}
 
-📂 sɪᴢᴇ: {file_size}"""
+📂 Size: {file_size}
+
+📥 Click the download icon to Download the file on Telegram.
+
+🛡Safe and Resumable Downloading Experience!
+
+⚠️ Forward the File to Your Saved Messages! 
+
+🚫 File or Bot might get Deleted in 5 minutes.️"""
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
