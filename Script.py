@@ -5,15 +5,15 @@
 
 class script(object):
     START_TXT = """<b>👋 ʜᴇʟʟᴏ {}
-    ᴍʏ ɴᴀᴍᴇ {},</br>
-    <b>hi</b>"""
+    🤖 ᴍʏ ɴᴀᴍᴇ {}
+    💼 ɪ ᴡᴏʀᴋ ғᴏʀ 'ᴛʜᴇ ᴍᴏᴠɪᴇ ɢᴜʏ' ᴀs ᴀ ғɪʟᴇ ᴘʀᴏᴠɪᴅᴇʀ ʙᴏᴛ.</b>"""
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
     
-    CAPTION = """<b>🎬 File Name: {file_name}
+    CAPTION = """🎬 File Name: {file_name}
 
 📂 Size: {file_size}
 
@@ -23,7 +23,7 @@ class script(object):
 
 ⚠️ Forward the File to Your Saved Messages! 
 
-🚫 File or Bot might get Deleted in 5 minutes.️</b>"""
+🚫 File or Bot might get Deleted in 5 minutes.️"""
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
