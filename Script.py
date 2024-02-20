@@ -141,8 +141,11 @@ Nᴀᴍᴇ - {}</b>
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
 
 📅 Dᴀᴛᴇ : <code>{}</code>
+
 ⏰ Tɪᴍᴇ : <code>{}</code>
+
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
+
 🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>"""
 
 # Don't Remove Credit Tg - @VJ_Botz
