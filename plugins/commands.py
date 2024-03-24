@@ -60,14 +60,14 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('❣️ ғᴏʟʟᴏᴡ ᴜs ᴏɴ ɪɴsᴛᴀ', url='https://www.instagram.com/themovieguy_01')
+            InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@Tech_VJ')
             ],[
-            InlineKeyboardButton('🎬 ʀᴇǫᴜᴇsᴛ ᴍᴏᴠɪᴇ', url='https://t.me/+GU7ByXRHzGJkNzJl'),
-            InlineKeyboardButton('🔔 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/TheMovieGuy_01')
+            InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/vj_bot_disscussion'),
+            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/vj_botz')
             ],[
-            InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ', url='https://t.me/ContactTheMovieGuy_bot')
+            InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')
             ],[
-            InlineKeyboardButton('💌  ᴄᴏɴᴛᴀᴄᴛ', url='https://t.me/ContactTheMovieGuy_bot'),
+            InlineKeyboardButton('💁‍♀️ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -117,7 +117,8 @@ async def start(client, message):
             if f_caption is None:
                 f_caption = f"{title}"
             try:
-                h = await message.reply_text(f"\n\n<b>📥 ᴄʟɪᴄᴋ ᴛʜᴇ ᴅᴏᴡɴʟᴏᴀᴅ ɪᴄᴏɴ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ғɪʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ</b>\n\n<b>⚠️ ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ {AUTO_DELETE} minutes.</b>\n\n<b>📩 ғᴏʀᴡᴀʀᴅ ᴛʜᴇ ғɪʟᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs!</b>>")
+                h = await message.reply_text(f"\n\n<b>📥 ᴄʟɪᴄᴋ ᴛʜᴇ ᴅᴏᴡɴʟᴏᴀᴅ ɪᴄᴏɴ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ғɪʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ</b>\n\n<b>⚠️ ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ {AUTO_DELETE} minutes.</b>\n\n<b>📩 ғᴏʀᴡᴀʀᴅ ᴛʜᴇ ғɪʟᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs!</b>
+")
                 k = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
@@ -151,7 +152,8 @@ async def start(client, message):
         sts = await message.reply("**🔺 ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ**")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
-        await message.reply_text(f"\n\n<b>📥 ᴄʟɪᴄᴋ ᴛʜᴇ ᴅᴏᴡɴʟᴏᴀᴅ ɪᴄᴏɴ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ғɪʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ</b>\n\n<b>⚠️ ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ {AUTO_DELETE} minutes.</b>\n\n<b>📩 ғᴏʀᴡᴀʀᴅ ᴛʜᴇ ғɪʟᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs!</b>")
+        await message.reply_text(f"\n\n<b>📥 ᴄʟɪᴄᴋ ᴛʜᴇ ᴅᴏᴡɴʟᴏᴀᴅ ɪᴄᴏɴ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ғɪʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ</b>\n\n<b>⚠️ ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ {AUTO_DELETE} minutes.</b>\n\n<b>📩 ғᴏʀᴡᴀʀᴅ ᴛʜᴇ ғɪʟᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs!</b>
+")
                
         try:
             f_msg_id, l_msg_id, f_chat_id, protect = decoded.split("_", 3)
@@ -173,7 +175,8 @@ async def start(client, message):
                     file_name = getattr(media, 'file_name', '')
                     f_caption = getattr(msg, 'caption', file_name)
                 try:
-                    h = await message.reply_text(f"\n\n<b>📥 ᴄʟɪᴄᴋ ᴛʜᴇ ᴅᴏᴡɴʟᴏᴀᴅ ɪᴄᴏɴ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ғɪʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ</b>\n\n<b>⚠️ ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ {AUTO_DELETE} minutes.</b>\n\n<b>📩 ғᴏʀᴡᴀʀᴅ ᴛʜᴇ ғɪʟᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs!</b>")
+                    h = await message.reply_text(f"\n\n<b>📥 ᴄʟɪᴄᴋ ᴛʜᴇ ᴅᴏᴡɴʟᴏᴀᴅ ɪᴄᴏɴ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ғɪʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ</b>\n\n<b>⚠️ ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ {AUTO_DELETE} minutes.</b>\n\n<b>📩 ғᴏʀᴡᴀʀᴅ ᴛʜᴇ ғɪʟᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs!</b>
+")
                     k = await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False)
                     
                     asyncio.create_task(delete_after_delay(k, AUTO_DELETE_TIME))
@@ -213,7 +216,7 @@ async def start(client, message):
             )
             filetype = msg.media
             file = getattr(msg, filetype.value)
-            title = '  ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
+            title = '@VJ_Botz  ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
             size=get_size(file.file_size)
             f_caption = f"<code>{title}</code>"
             if CUSTOM_FILE_CAPTION:
@@ -224,22 +227,23 @@ async def start(client, message):
             
             await msg.edit_caption(f_caption)
             g = await msg.reply_text(
-                text=f"**ʏᴏᴜ ᴄᴀɴ ɢᴇɴᴇʀᴀᴛᴇ ᴏɴʟɪɴᴇ sᴛʀᴇᴀᴍ ʟɪɴᴋ ᴏғ ʏᴏᴜʀ ғɪʟᴇ ᴀɴᴅ ᴀʟsᴏ ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ғᴏʀ ʏᴏᴜʀ ғɪʟᴇ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ**",
+                text=f"**•• ʏᴏᴜ ᴄᴀɴ ɢᴇɴᴇʀᴀᴛᴇ ᴏɴʟɪɴᴇ sᴛʀᴇᴀᴍ ʟɪɴᴋ ᴏғ ʏᴏᴜʀ ғɪʟᴇ ᴀɴᴅ ᴀʟsᴏ ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ғᴏʀ ʏᴏᴜʀ ғɪʟᴇ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ 👇**",
                 quote=True,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                         InlineKeyboardButton('🖇️ ɢᴇɴᴇʀᴀᴛᴇ ʟɪɴᴋ', callback_data=f'generate_stream_link:{file_id}')
+                         InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')
                      ]
                     ]
                 )
             )
-            k = await msg.reply(f"\n\n<b>📥 ᴄʟɪᴄᴋ ᴛʜᴇ ᴅᴏᴡɴʟᴏᴀᴅ ɪᴄᴏɴ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ғɪʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ</b>\n\n<b>⚠️ ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ {AUTO_DELETE} minutes.</b>\n\n<b>📩 ғᴏʀᴡᴀʀᴅ ᴛʜᴇ ғɪʟᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs!</b>",quote=True)
+            k = await msg.reply(f"\n\n<b>📥 ᴄʟɪᴄᴋ ᴛʜᴇ ᴅᴏᴡɴʟᴏᴀᴅ ɪᴄᴏɴ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ғɪʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ</b>\n\n<b>⚠️ ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ {AUTO_DELETE} minutes.</b>\n\n<b>📩 ғᴏʀᴡᴀʀᴅ ᴛʜᴇ ғɪʟᴇ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs!</b>
+",quote=True)
             await asyncio.sleep(AUTO_DELETE_TIME)
             await msg.delete()
             await g.delete()
-            await k.edit_text("<b>Your File is successfully deleted!!!</b>")
+            await k.edit_text("<b>Your File/Video is successfully deleted!!!</b>")
             return
         except:
             pass
@@ -316,8 +320,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.delete()
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🏡 ʜᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔒 ᴄʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -338,14 +342,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('❣️ ғᴏʟʟᴏᴡ ᴜs ᴏɴ ɪɴsᴛᴀ', url='https://www.instagram.com/themovieguy_01')
+            InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@Tech_VJ')
             ],[
-            InlineKeyboardButton('🎬 ʀᴇǫᴜᴇsᴛ ᴍᴏᴠɪᴇ', url='https://t.me/+GU7ByXRHzGJkNzJl'),
-            InlineKeyboardButton('🔔 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/TheMovieGuy_01')
+            InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/vj_bot_disscussion'),
+            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/vj_botz')
             ],[
-            InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ', url='https://t.me/ContactTheMovieGuy_bot')
+            InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')
             ],[
-            InlineKeyboardButton('💌  ᴄᴏɴᴛᴀᴄᴛ', url='https://t.me/ContactTheMovieGuy_bot'),
+            InlineKeyboardButton('💁‍♀️ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         
@@ -368,8 +372,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "clone":
         buttons = [[
-            InlineKeyboardButton('🏡 ʜᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔒 ᴄʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -389,8 +393,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "help":
         buttons = [[
-        InlineKeyboardButton('🏡 ʜᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔒 ᴄʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -434,15 +438,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⬇️ ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=download),  # we download Link
-                                                    InlineKeyboardButton('▶️ ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ', url=stream)]])  # web stream Link
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
+                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)]])  # web stream Link
             )
             await query.message.reply_text(
-                text="ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ",
+                text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⬇️ ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=download),  # we download Link
-                                                    InlineKeyboardButton('▶️ ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ', url=stream)]])  # web stream Link
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
+                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)]])  # web stream Link
             )
         except Exception as e:
             print(e)  # print the error message
