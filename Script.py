@@ -18,13 +18,7 @@ class script(object):
     
     CAPTION = """🎬 File Name: {file_name}
 
-📂 Size: {file_size}
-
-📥 Click the download icon to Download the file on Telegram.
-
-⚠️ Forward the File to Your Saved Messages! 
-
-🚫 File might get Deleted in 5 minutes.️"""
+📂 Size: {file_size}"""
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
