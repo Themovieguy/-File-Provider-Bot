@@ -213,7 +213,7 @@ async def start(client, message):
             )
             filetype = msg.media
             file = getattr(msg, filetype.value)
-            title = files.file_name
+            title = '  ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), 
             size=get_size(file.file_size)
             f_caption = f"<code>{title}</code>"
             if CUSTOM_FILE_CAPTION:
